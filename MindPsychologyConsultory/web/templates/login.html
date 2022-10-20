@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login de Mind Psychology Consultory</title>
+    <link href="static/css/login.css" rel="stylesheet" media="screen">
+</head>
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+    <div>Mind<span>Psychology</span><span>Consultory</span></div>
+</div>
+<br>
+<div class="login">
+    <form action="" method="post" autocomplete="off">
+        <input type="text"
+               id="login"
+               class="fadeIn second"
+               name="correo"
+               placeholder="correo"
+               value="{{request.form.login }}"><br>
+        <input type="password"
+               id="password"
+               class="fadeIn third"
+               name="password"
+               placeholder="contraseña"
+               value="{{request.form.password }}"><br>
+        <input type="submit" value="Login"><br>
+    </form>
+    {% if error %}
+    <p><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+
+    <div id="ButtonRegister">
+        <a href="{{ url_for('registro') }}" style="text-decoration:none">Registrarse</a><br>
+        <p>Sembrando 2021</p>
+    </div>
+</div>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login de Mind Psychology Consultory</title>
+    <link href="static/css/login.css" rel="stylesheet" media="screen">
+</head>
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+    <div>Mind<span>Psychology</span><span>Consultory</span></div>
+</div>
+<br>
+<div class="login">
+    <form action="" method="post" autocomplete="off">
+        <input type="text"
+               id="login"
+               name="correo"
+               placeholder="correo"
+               value="{{request.form.login}}">
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="contraseña"
+               value="{{request.form.password}}">
+        <input type="text"
+               id="nombre"
+               name="nombre"
+               placeholder="nombre"
+               value="{{request.form.nombre}}">
+        <input type="text"
+               id="apellido"
+               name="apellido"
+               placeholder="apellido"
+               value="{{request.form.apellido}}">
+        <input type="number"
+               id="telefono"
+               name="telefono"
+               placeholder="telefono"
+               value="{{request.form.telefono}}">
+        <input type="submit" value="Registrarse">
+    </form>
+    {% if error %}
+    <p><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+
+</div>
+</html>

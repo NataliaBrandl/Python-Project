@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<title>Mind Psychology Consultory</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage" style="scroll-behavior: smooth;">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+           href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal "><i class="fa fa-home w3-margin-right"></i>Logo</a>
+        <a href="#corrientes" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Corrientes</a>
+        <a href="#terapia" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Comienza tu terapia
+            psicológica</a>
+        <a href="#sobremi" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sobre nosotras</a>
+        <a href="{{url_for('login')}}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Iniciar Sesión</a>
+        <a href="{{url_for('registro')}}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Registrarse</a>
+        <a href="{{url_for('ListarUsuarios')}}" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Usuarios registrados</a>
+    </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#corrientes" class="w3-bar-item w3-button">Corrientes</a>
+    <a href="#terapia" class="w3-bar-item w3-button">Comienza tu terapia psicológica</a>
+    <a href="#sobremi" class="w3-bar-item w3-button">Sobre nosotras</a>
+</div>
+
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+    <img src="/static/img/Logo2.jpg" alt="boat" style="width:50%;min-height:350px;max-height:600px;">
+    <img src="/static/img/sembrando.jpg" alt="boat" style="width:48%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-teal w3-display-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+            <h4>Oh snap! We just showed you a modal..</h4>
+            <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="w3-container">
+            <p>Cool huh? Ok, enough teasing around..</p>
+            <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+        </div>
+        <footer class="w3-container w3-teal">
+            <p>Modal footer</p>
+        </footer>
+    </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="corrientes">
+    <h2>Corrientes</h2>
+    <p>Conoce algunas de las corrientes con las que trabajan nuestros psicológos</p>
+
+    <div class="w3-row"><br>
+
+        <div class="w3-quarter">
+            <img src="/static/img/Psicoanalisis.jpg"
+                 alt="Boss" style="width:65%" class="w3-circle w3-hover-opacity">
+            <h3>Psicoanálisis</h3>
+            <p>El psicoanálisis se basa en cuatro principios fundamentales: el inconsciente, la supresión, el conflicto
+                y la pulsión. Por tanto, las acciones de nuestra mente, según Freud, son el resultado de un conflicto
+                entre fuerzas opuestas entre sí, lo que lleva a la supresión, es decir, la eliminación de las
+                experiencias dolorosas o vergonzosas por parte de la mente, mediante el establecimiento del inconsciente
+                como una dimensión en sí. El objetivo del psicoanálisis es investigar aquellos contenidos psicológicos
+                que, permaneciendo en una etapa inconsciente, afectan el comportamiento y la personalidad de los
+                sujetos, lo que se manifiesta en forma de ansiedades, sueños y lapsos.
+
+            </p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/static/img/cognitivoConductual.jpg"
+                 alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
+            <h3>Cognitivo - Conductual</h3>
+            <p>Es una forma de entender cómo piensa uno acerca de sí mismo, de otras personas y del mundo que le rodea,
+                y cómo lo que uno hace afecta a sus pensamientos y sentimientos. La TCC le puede ayudar a cambiar la
+                forma cómo piensa ("cognitivo") y cómo actúa ("conductual") y estos cambios le pueden ayudar a sentirse
+                mejor. A diferencia de algunas de las otras "terapias habladas", la TCC se centra en problemas y
+                dificultades del "aquí y ahora". En lugar de centrarse en las causas de su angustia o síntomas en el
+                pasado, busca maneras de mejorar su estado anímico ahora.</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="/static/img/Sistemica.jpg" alt="Boss"
+                 style="width:75%" class="w3-circle w3-hover-opacity">
+            <h3>Sistémica</h3>
+            <p>La terapia sistémica es un enfoque terapéutico que se aplica en el tratamiento de trastornos
+                conceptualizados como la expresión de las alteraciones en las interacciones, estilos relacionales y
+                patrones comunicacionales de un grupo social comprendido como un sistema humano. La intervención
+                sistémica, por tanto, plantea el paso del individuo al sistema, de lo intrapsíquico a lo interpersonal,
+                utilizando así la interacción como elemento de trabajo y comunicación. Por todo ello no se atiende al
+                “¿por qué?” un individuo actúa de determinada manera sino al “¿cómo?” lo hace. Para el enfoque
+                sistémico, la persona “enferma” se redefine como una persona “portadora de un síntoma” cuyo origen hay
+                que buscar en una dinámica disfuncional que sucede en uno o varios de los sistemas en los que se
+                encuentra inserta dicha persona. Por tanto, en la terapia normalmente participan todas las personas que
+                conviven en el núcleo familiar (padre, madre, hermano/a, pareja, etc).</p>
+        </div>
+
+        <div class="w3-quarter">
+            <img src="https://i2.wp.com/bcngestalt.com/wp-content/uploads/2014/06/Gestalt-es-castellano.jpg?fit=819%2C554&ssl=1"
+                 alt="Boss" style="width:65%" class="w3-circle w3-hover-opacity">
+            <h3>Gestalt</h3>
+            <p>La Terapia Gestalt es una terapia psicológica humanista que busca desarrollar el potencial humano y el
+                crecimiento personal. Se trata de una forma de psicoterapia utilizada para tratar diversos trastornos
+                psicológicos y emocionales, la cual nos acerca a conceptos como la toma de conciencia, la
+                autorrealización, el desarrollo personal y la autoestima. Esta terapia procura integrar las conductas,
+                sentimientos y pensamientos del paciente, de manera que sus intenciones y acciones estén enfocadas en
+                conseguir una salud mental óptima. El psicólogo ayudará al paciente a que sea más consciente de sí
+                mismo, a pensar más en el presente y a asumir más responsabilidades en el cuidado de su vida.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="terapia">
+
+    <div class="w3-quarter">
+        <h2>Comienza tu terapia psicológica</h2>
+        <p>Desde que ingreses a la página podrás observar las distintas corrientes psicológicas con las que trabajan los
+            psicólogos registrados. Registrándote accederás a contacto con los psicólogos y consultorios registrados.
+            Podrás reservar una fecha y horario para tu primera sesión psicológica.</p>
+    </div>
+
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/static/img/psicologia1.jpg" alt="psicologia1" style="width:100%">
+            <div class="w3-container">
+                <h3>Comentario 1</h3>
+                <h4>Susan Techera</h4>
+                <p>Acceso super sencillo y psicológos de alto calibre, con precios accesibles.</p>
+                <p>Desde el principio, de parte de los psicológos y el equipo, una gran disponibilidad para contestar
+                    dudas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/static/img/psicologia2.jpg" alt="Angustia" style="width:100%">
+            <div class="w3-container">
+                <h3>Comentario 2</h3>
+                <h4>Nahuel González</h4>
+                <p>Pude contactar con un psicológo al segundo día de haberme registrado.</p>
+                <p>Desde el equipo se mantuvieron en contacto conmigo para saber si precisaba ayuda.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/static/img/psicologia3.jpg" alt="Mountains" style="width:100%">
+            <div class="w3-container">
+                <h3>Comentario 3</h3>
+                <h4>Gabriel Márquez</h4>
+                <p>Logre empezar terapia, luego de 6 meses de busqueda en otros lugares, encontre este sitio y fue
+                    descubrir un gran lugar.</p>
+                <p>Esta pagína me ayudo a encontrar el psicológo ideal.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="sobremi">
+    <div class="w3-row">
+        <div class="w3-col m5">
+            <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Sobre nosotras</span></div>
+            <h3>Natalia Brandl</h3>
+            <p>Estudiante de Sembrando TIC</p>
+            <p>Apasionada por la tecnología</p>
+            <p>Dispuesta a afrontar nuevos desafíos</p>
+            <p>Primera generación Sembrando TIC - 2021</p>
+        </div>
+            <div style="float:left; margin-top:60px">
+                <h3>Fatima DeMarco</h3>
+                <p>Estudiante de Sembrando TIC</p>
+                <p>Dispuesta a afrontar nuevos desafíos</p>
+                <p>Primera generación Sembrando TIC - 2021</p>
+            </div>
+
+
+        <!-- Image of location/map -->
+        <img src="/static/img/mapa.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+            <p>Powered by <a href="https://www.linkedin.com/in/nataliabrandl/" target="_blank">Natalia Brandl</a></p>
+            <p>Powered by Fatima Demarco</p>
+
+            <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+                <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+                <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+            </div>
+        </footer>
+
+        <script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+
+
+        </script>
+
+</body>
+</html>

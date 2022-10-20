@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios registrados en Mind Psychology Consultory</title>
+    <link href="static/css/login.css" rel="stylesheet" media="screen">
+</head>
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+    <div>Mind<span>Psychology</span><span>Consultory</span></div>
+    <br>
+        <div>
+        {% for usuario in usuarios %}
+            <p> {{ usuario }} </p>
+        {% endfor %}
+        <p>Sembrando 2021</p>
+    </div>
+</div>
+
+</html>
