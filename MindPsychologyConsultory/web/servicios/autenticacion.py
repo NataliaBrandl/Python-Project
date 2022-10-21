@@ -1,6 +1,6 @@
 import requests
 
-from web.servicios import rest_api
+from servicios import rest_api
 
 
 def validar_credenciales(correo, clave):

@@ -91,7 +91,7 @@ FOREIGN KEY(ID_USUARIO) REFERENCES USUARIOS(ID_USUARIO)
 if __name__ == '__main__':
     try:
         print('Creando Base de datos..')
-        conexion = sqlite3.connect('../mindpsychologyconsultory.db')
+        conexion = sqlite3.connect('./mindpsychologyconsultory.db')
 
         print('Creando Tablas..')
         conexion.execute(sql_tabla_usuarios)

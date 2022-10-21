@@ -1,6 +1,6 @@
 from flask import Flask, request, redirect, url_for
 from flask import render_template
-from web.servicios import autenticacion
+from servicios import autenticacion
 
 app = Flask(__name__)
 
